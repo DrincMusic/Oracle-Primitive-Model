@@ -1,0 +1,56 @@
+{
+  "validation_only": true,
+  "primary_training_executed": false,
+  "test_data_accessed": false,
+  "device": "NVIDIA GeForce RTX 4090",
+  "compute_capability": [
+    8,
+    9
+  ],
+  "total_memory_bytes": 25756696576,
+  "torch": "2.8.0+cu128",
+  "cuda_runtime": "12.8",
+  "cudnn": 91002,
+  "traces": [
+    {
+      "model_kind": "OPM_SHARED",
+      "forward_flops": 392765952,
+      "median_latency_ms": 5.01830002758652,
+      "batch_size": 3,
+      "profiler": "torch.profiler.cuda.with_flops",
+      "peak_memory_bytes": 28740096
+    },
+    {
+      "model_kind": "PROC_UNTIED",
+      "forward_flops": 392765962,
+      "median_latency_ms": 6.454799906350672,
+      "batch_size": 3,
+      "profiler": "torch.profiler.cuda.with_flops",
+      "peak_memory_bytes": 47753728
+    },
+    {
+      "model_kind": "PROC_CLONE",
+      "forward_flops": 392765962,
+      "median_latency_ms": 6.347500020638108,
+      "batch_size": 3,
+      "profiler": "torch.profiler.cuda.with_flops",
+      "peak_memory_bytes": 47753728
+    },
+    {
+      "model_kind": "DOMAIN_GENERALIST",
+      "forward_flops": 392950272,
+      "median_latency_ms": 6.126800086349249,
+      "batch_size": 3,
+      "profiler": "torch.profiler.cuda.with_flops",
+      "peak_memory_bytes": 23023104
+    }
+  ],
+  "checkpoint_sha256": "c404799f31001887d81a9d54d0de633bda590f2a70cc14aa2e7cfb4987eb1cde",
+  "checkpoint_step": 1,
+  "checkpoint_metadata": {
+    "validation_only": true,
+    "primary_training": false,
+    "device": "cuda:0"
+  },
+  "exact_checkpoint_recovery": true
+}

@@ -1,0 +1,18 @@
+{
+  "aggregate_test_evaluation_authorized": false,
+  "approval_status": "APPROVED",
+  "approved_candidate_sha256": "09fe26ecfae0137b6060aef34438cd5601ce7e82895b7a0c8491aa904d9f4ff6",
+  "approval_statement": "I, Dwight Robert Keller-Williams, approve the exact Stage 1 authorization candidate with SHA-256 09fe26ecfae0137b6060aef34438cd5601ce7e82895b7a0c8491aa904d9f4ff6 and authorize canonical primary training, trained probes, and label-blind prediction generation. Sealed-label access, aggregate evaluation, and claim decisions remain unauthorized.",
+  "authorized_by": "Dwight Robert Keller-Williams",
+  "authorized_stage": "STAGE_1_PRIMARY_TRAINING_AND_PROBES",
+  "claim_decisions_authorized": false,
+  "lifecycle": "PRIMARY_RUNS",
+  "prediction_generation_authorized": true,
+  "primary_runs_authorized": true,
+  "sealed_label_access_authorized": false,
+  "source_status_sha256": "09fe26ecfae0137b6060aef34438cd5601ce7e82895b7a0c8491aa904d9f4ff6",
+  "trained_probes_authorized": true,
+  "authorized_on": "2026-08-20",
+  "canonical_training_authorized": false,
+  "execution_status": "BLOCKED_PENDING_V1_1_4_APPROVAL"
+}

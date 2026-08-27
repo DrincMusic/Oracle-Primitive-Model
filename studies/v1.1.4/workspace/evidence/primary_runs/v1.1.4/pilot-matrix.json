@@ -1,0 +1,48 @@
+{
+  "ordering": "Strict row order: condition order OPM_SHARED, PROC_UNTIED, PROC_CLONE, DOMAIN_GENERALIST; within each condition learning rate ascending, then dropout ascending.",
+  "runs": [
+    {"condition":"OPM_SHARED","learning_rate":0.0001,"dropout":0.0,"state":"COMPLETED","run_id":"8e694e7623d1834b3a8b80e8"},
+    {"condition":"OPM_SHARED","learning_rate":0.0001,"dropout":0.1,"state":"COMPLETED","run_id":"b0835cf3e774dee750d20232"},
+    {"condition":"OPM_SHARED","learning_rate":0.0003,"dropout":0.0,"state":"COMPLETED","run_id":"b94e926bc10f6dfe599b684e"},
+    {"condition":"OPM_SHARED","learning_rate":0.0003,"dropout":0.1,"state":"COMPLETED","run_id":"38b4482944c9a3b63427b454"},
+    {"condition":"OPM_SHARED","learning_rate":0.0006,"dropout":0.0,"state":"COMPLETED","run_id":"3983ca0fcc3eafacd61ffc44"},
+    {"condition":"OPM_SHARED","learning_rate":0.0006,"dropout":0.1,"state":"COMPLETED","run_id":"3948b6382b5663dbdc0006d6"},
+    {"condition":"PROC_UNTIED","learning_rate":0.0001,"dropout":0.0,"state":"COMPLETED","run_id":"f0f2536bdb2545725b70cf5b"},
+    {"condition":"PROC_UNTIED","learning_rate":0.0001,"dropout":0.1,"state":"COMPLETED","run_id":"d4ac195e77e3f0baaa14581e"},
+    {"condition":"PROC_UNTIED","learning_rate":0.0003,"dropout":0.0,"state":"COMPLETED","run_id":"482cab941064bdb1b03f946b"},
+    {"condition":"PROC_UNTIED","learning_rate":0.0003,"dropout":0.1,"state":"COMPLETED","run_id":"004f422ca7047a62a7ce553c"},
+    {"condition":"PROC_UNTIED","learning_rate":0.0006,"dropout":0.0,"state":"COMPLETED","run_id":"e3d4c9878f117397693ccb94"},
+    {"condition":"PROC_UNTIED","learning_rate":0.0006,"dropout":0.1,"state":"COMPLETED","run_id":"f0ed25daf95d24fbcc736a51"},
+    {"condition":"PROC_CLONE","learning_rate":0.0001,"dropout":0.0,"state":"COMPLETED","run_id":"fa0b8784e3a6dc83656445fc"},
+    {"condition":"PROC_CLONE","learning_rate":0.0001,"dropout":0.1,"state":"COMPLETED","run_id":"67d8392f6038501a0bb9b177"},
+    {"condition":"PROC_CLONE","learning_rate":0.0003,"dropout":0.0,"state":"COMPLETED","run_id":"dad2a13ab788d1b048fb5944"},
+    {"condition":"PROC_CLONE","learning_rate":0.0003,"dropout":0.1,"state":"COMPLETED","run_id":"afef3048b021dd7b6bfe6f3f"},
+    {"condition":"PROC_CLONE","learning_rate":0.0006,"dropout":0.0,"state":"COMPLETED","run_id":"7e7a9ae55a1cc49beceb7307"},
+    {"condition":"PROC_CLONE","learning_rate":0.0006,"dropout":0.1,"state":"COMPLETED","run_id":"2685a1b69cdcb63ac2c7cbc4"},
+    {"condition":"DOMAIN_GENERALIST","learning_rate":0.0001,"dropout":0.0,"state":"COMPLETED","run_id":"d93651e708340612e91005e6"},
+    {"condition":"DOMAIN_GENERALIST","learning_rate":0.0001,"dropout":0.1,"state":"COMPLETED","run_id":"56050406a4934710954c46e6"},
+    {"condition":"DOMAIN_GENERALIST","learning_rate":0.0003,"dropout":0.0,"state":"COMPLETED","run_id":"b84eecf41b6803cc7a950c47"},
+    {"condition":"DOMAIN_GENERALIST","learning_rate":0.0003,"dropout":0.1,"state":"COMPLETED","run_id":"6376c1c68efe0a18ad2ae102"},
+    {"condition":"DOMAIN_GENERALIST","learning_rate":0.0006,"dropout":0.0,"state":"COMPLETED","run_id":"8bbe2944592dca8cdcba7f95"},
+    {"condition":"DOMAIN_GENERALIST","learning_rate":0.0006,"dropout":0.1,"state":"COMPLETED","run_id":"108164c69e161d3ac39edb2c"}
+  ],
+  "selection": {
+    "state": "FROZEN",
+    "statistic": "Arithmetic mean of selected-checkpoint macro-validation accuracy across the four conditions",
+    "tie_rule": "Include every combination satisfying M - mean <= 0.001; select lower learning rate, then lower dropout",
+    "means": [
+      {"learning_rate":0.0001,"dropout":0.0,"mean":0.9942881944444446,"gap_from_M":0.0048437499999998,"in_tie_set":false},
+      {"learning_rate":0.0001,"dropout":0.1,"mean":0.9901041666666666,"gap_from_M":0.0090277777777779,"in_tie_set":false},
+      {"learning_rate":0.0003,"dropout":0.0,"mean":0.9974826388888889,"gap_from_M":0.0016493055555555,"in_tie_set":false},
+      {"learning_rate":0.0003,"dropout":0.1,"mean":0.9910937499999999,"gap_from_M":0.0080381944444445,"in_tie_set":false},
+      {"learning_rate":0.0006,"dropout":0.0,"mean":0.9985416666666667,"gap_from_M":0.0005902777777778,"in_tie_set":true},
+      {"learning_rate":0.0006,"dropout":0.1,"mean":0.9991319444444444,"gap_from_M":0.0,"in_tie_set":true}
+    ],
+    "maximum_mean": 0.9991319444444444,
+    "selected_learning_rate": 0.0006,
+    "selected_dropout": 0.0,
+    "primary_model_seeds": [1101, 2202, 3303, 4404, 5505],
+    "pilot_runs_enter_claim_statistics": false
+  },
+  "version": "1.1.4"
+}

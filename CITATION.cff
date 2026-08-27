@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this study or implementation, please cite it using this metadata."
+title: "Oracle Primitive Model: Shared Primitive Architecture for Systematic Recombination"
+type: software
+version: 1.1.4
+authors:
+  - family-names: "Keller-Williams"
+    given-names: "Dwight Robert"
+repository-code: "https://github.com/DrincMusic/Oracle-Primitive-Model"
+url: "https://github.com/DrincMusic/Oracle-Primitive-Model"
+abstract: >-
+  A shared-primitive architecture and frozen controlled study of systematic recombination
+  generalization, with byte-preserving verification materials for OPM v1.1.4.

@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "train:input-hash,count,policy,contamination",
+    "validation:input-hash,count,policy,contamination",
+    "test-interpolation:input-hash,count,policy,contamination",
+    "test-recombination:input-hash,count,policy,contamination",
+    "test-renderer:input-hash,count,policy,contamination",
+    "test-structural:input-hash,count,policy,contamination"
+  ],
+  "passed": true,
+  "sealed_label_content_accessed": false,
+  "split_rows": {
+    "test-interpolation": 14400,
+    "test-recombination": 18000,
+    "test-renderer": 9600,
+    "test-structural": 9600,
+    "train": 144000,
+    "validation": 14400
+  },
+  "test_labels_separated": true,
+  "total_rows": 210000,
+  "unique_cross_split_latents": 210000,
+  "unique_worlds": 6700
+}

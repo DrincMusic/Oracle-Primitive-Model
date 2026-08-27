@@ -1,0 +1,22 @@
+{
+  "aggregate_evaluation_executed": false,
+  "canonical_training_started": false,
+  "dataset_labels_accessed": false,
+  "preflight_status": "BLOCKED_PENDING_TRAINING_EXECUTION_ERRATUM",
+  "sampler_finding": {
+    "batch_size": 256,
+    "domain_count": 3,
+    "exact_per_batch_domain_balance_possible": false,
+    "exact_three_batch_macrocycle_balance_possible": true,
+    "macrocycle_examples": 768,
+    "supported_domain_operation_cells": 9
+  },
+  "tuning_finding": {
+    "declared_combinations": 6,
+    "declared_model_conditions": 4,
+    "declared_pilot_seeds": 1,
+    "pilot_duration_defined": false,
+    "global_selection_statistic_defined": false,
+    "tie_break_defined": false
+  }
+}

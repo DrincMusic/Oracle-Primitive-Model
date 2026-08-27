@@ -1,0 +1,11 @@
+{
+  "approved_by": "Dwight Robert Keller-Williams",
+  "approved_candidate_sha256": "ee6971a94ab219dfd6baf1aad3fe6c4dfdc81dece80300cb350ebda9b788d6c6",
+  "approval_status": "APPROVED",
+  "aggregate_test_evaluation_authorized": false,
+  "claim_decisions_authorized": false,
+  "lifecycle": "PROTOCOL_FROZEN",
+  "primary_runs_authorized": false,
+  "sealed_label_access_authorized": false,
+  "transitioned_on": "2026-08-20"
+}

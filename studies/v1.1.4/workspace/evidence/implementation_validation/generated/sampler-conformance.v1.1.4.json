@@ -1,0 +1,26 @@
+{
+  "amendment_version": "1.1.4",
+  "passed": true,
+  "canonical_optimizer_steps_executed": 0,
+  "sealed_labels_accessed": false,
+  "aggregate_evaluation_executed": false,
+  "tests": {
+    "complete_50000_step_marginals_all_declared_seeds": true,
+    "heldout_domain_operation_cells_absent": true,
+    "within_reuse_cycle_replacement_absent_all_supported_strata": true,
+    "deterministic_replay": true,
+    "checkpoint_next_batch_and_reuse_state_exact": true,
+    "terminal_tail_is_macrocycle_16666_batches_0_and_1": true
+  },
+  "per_seed": [
+    {"seed": 1101, "domain_counts": {"SET": 4266666, "SCENE": 4266667, "PROGRAM": 4266667}, "domain_max_minus_min": 1, "examples": 12800000},
+    {"seed": 2202, "domain_counts": {"SET": 4266667, "SCENE": 4266666, "PROGRAM": 4266667}, "domain_max_minus_min": 1, "examples": 12800000},
+    {"seed": 3303, "domain_counts": {"SET": 4266666, "SCENE": 4266667, "PROGRAM": 4266667}, "domain_max_minus_min": 1, "examples": 12800000},
+    {"seed": 4404, "domain_counts": {"SET": 4266666, "SCENE": 4266667, "PROGRAM": 4266667}, "domain_max_minus_min": 1, "examples": 12800000},
+    {"seed": 5505, "domain_counts": {"SET": 4266666, "SCENE": 4266667, "PROGRAM": 4266667}, "domain_max_minus_min": 1, "examples": 12800000}
+  ],
+  "exact_label_count_each": 6400000,
+  "exact_operation_count_each": 3200000,
+  "exact_step_count_each": 6400000,
+  "opm_tests_passed": 50
+}

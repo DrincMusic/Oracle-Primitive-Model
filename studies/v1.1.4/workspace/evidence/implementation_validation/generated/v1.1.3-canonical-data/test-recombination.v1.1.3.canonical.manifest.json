@@ -1,0 +1,28 @@
+{
+  "amendment_version": "1.1.3",
+  "binding_version": "1.1.1",
+  "cell_counts": {
+    "PROGRAM/CHAIN/0": 3000,
+    "PROGRAM/CHAIN/1": 3000,
+    "SCENE/LIFT/0": 3000,
+    "SCENE/LIFT/1": 3000,
+    "SET/REVERSE/0": 3000,
+    "SET/REVERSE/1": 3000
+  },
+  "evidence_order_version": "1.1.3",
+  "generator_revision": "opm-v1-spec-1.0.0",
+  "holdout_matrix": {
+    "PROGRAM": "CHAIN",
+    "SCENE": "LIFT",
+    "SET": "REVERSE"
+  },
+  "labels_separated": true,
+  "labels_sha256": "3acfd686311bbe1318fe8b325d6229891f63839adef8cd12ef551795f3cbb959",
+  "renderer_revision": "opm-v1-spec-1.0.0",
+  "row_count": 18000,
+  "seed_namespace": "opm-v1.1.3/test-recombination/world/<index>",
+  "sha256": "102a73c6ad367df12d7b0358deff2981ba0720001453eb686b18ce692728f823",
+  "specification_version": "1.0.0",
+  "split": "test-recombination",
+  "validation_only": false
+}

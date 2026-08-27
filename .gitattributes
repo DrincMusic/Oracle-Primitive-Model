@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.jsonl diff
+*.md text eol=lf
+*.py text eol=lf
+
+# Preserve the historical snapshot exactly; this must remain the final matching rule.
+studies/v1.1.4/workspace/** -text -eol

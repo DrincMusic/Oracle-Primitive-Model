@@ -1,0 +1,25 @@
+name: OPM source tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install study dependencies
+        run: python -m pip install -r requirements-study.txt
+      - name: Run OPM tests
+        working-directory: studies/v1.1.4/workspace
+        env:
+          PYTHONPATH: "src:."
+        run: python -m pytest tests -q
