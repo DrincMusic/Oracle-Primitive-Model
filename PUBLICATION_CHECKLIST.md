@@ -11,7 +11,7 @@
 - [x] Add and test an agent-readable doctor, verifier, and development setup path.
 - [x] Connect the local repository to the private GitHub remote.
 - [x] Push with explicit repository-owner approval.
-- [ ] Verify CI from a clean GitHub checkout.
+- [x] Verify CI from a clean GitHub checkout.
 - [ ] Approve changing repository visibility to public.
 - [ ] Tag `study-v1.1.4` and create the release.
 - [ ] Archive external evidence and record its persistent identifier.

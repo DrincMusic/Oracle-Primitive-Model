@@ -20,6 +20,8 @@ Audit date: 2026-08-27
   `CITATION.cff`.
 - Agent onboarding: **PASS** — doctor, setup dry-run, closed-result verification, and the agent-facing
   96-test command completed successfully.
+- GitHub clean-checkout CI: **PASS** — both `Verify frozen OPM study` and `OPM source tests` completed
+  successfully on Ubuntu for commit `466a961`.
 
 ## Byte-bound local-path exception
 
