@@ -1,0 +1,2 @@
+# Install with the PyTorch CPU wheel index before requirements-study.txt.
+torch==2.8.0

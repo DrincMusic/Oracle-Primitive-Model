@@ -30,6 +30,9 @@ verifies the closed result, and runs the OPM-scoped tests:
 python tools/opm_agent.py setup
 ```
 
+The setup tool defaults to the official PyTorch 2.8 CPU wheel on Linux and Windows so a verification
+environment does not download the CUDA runtime. It does not configure or launch full GPU training.
+
 The equivalent manual commands are:
 
 ```powershell

@@ -16,7 +16,14 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: requirements-study.txt
+          cache-dependency-path: |
+            requirements-study.txt
+            requirements-torch-cpu.txt
+      - name: Install CPU PyTorch
+        run: >-
+          python -m pip install
+          --index-url https://download.pytorch.org/whl/cpu
+          -r requirements-torch-cpu.txt
       - name: Install study dependencies
         run: python -m pip install -r requirements-study.txt
       - name: Run OPM tests

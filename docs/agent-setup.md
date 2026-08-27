@@ -45,6 +45,11 @@ the closed result, and runs the standalone source tests:
 python tools/opm_agent.py setup
 ```
 
+On Linux and Windows, setup defaults to the smaller PyTorch 2.8 CPU wheel used by CI. This is enough
+for verification and source tests. Use `--torch-profile default` only when the platform-default wheel
+is intentional; GPU training requires a separately planned CUDA environment and is not launched by
+this setup command.
+
 An agent can inspect the exact setup commands without changing the machine:
 
 ```text

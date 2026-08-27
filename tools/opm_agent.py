@@ -15,6 +15,8 @@ REPOSITORY = Path(__file__).resolve().parents[1]
 WORKSPACE = REPOSITORY / "studies" / "v1.1.4" / "workspace"
 EXPERIMENT = REPOSITORY / "OPM_EXPERIMENT.json"
 REQUIREMENTS = REPOSITORY / "requirements-study.txt"
+CPU_TORCH_REQUIREMENTS = REPOSITORY / "requirements-torch-cpu.txt"
+CPU_TORCH_INDEX = "https://download.pytorch.org/whl/cpu"
 VERIFIER = REPOSITORY / "tools" / "verify_public_export.py"
 MINIMUM_PYTHON = (3, 11)
 RECOMMENDED_PYTHON = (3, 12)
@@ -64,6 +66,7 @@ def doctor_payload() -> tuple[dict[str, Any], bool]:
     required_paths = [
         EXPERIMENT,
         REQUIREMENTS,
+        CPU_TORCH_REQUIREMENTS,
         VERIFIER,
         WORKSPACE / "src",
         WORKSPACE / "tests",
@@ -174,6 +177,22 @@ def command_setup(args: argparse.Namespace) -> int:
     commands: list[tuple[list[str], Path]] = []
     if not python.is_file():
         commands.append(([sys.executable, "-m", "venv", str(venv_root)], REPOSITORY))
+    if args.torch_profile == "cpu" and sys.platform in {"linux", "win32"}:
+        commands.append(
+            (
+                [
+                    str(python),
+                    "-m",
+                    "pip",
+                    "install",
+                    "--index-url",
+                    CPU_TORCH_INDEX,
+                    "-r",
+                    str(CPU_TORCH_REQUIREMENTS),
+                ],
+                REPOSITORY,
+            )
+        )
     commands.append(
         ([str(python), "-m", "pip", "install", "-r", str(REQUIREMENTS)], REPOSITORY)
     )
@@ -234,6 +253,12 @@ def parser() -> argparse.ArgumentParser:
         "--dry-run",
         action="store_true",
         help="Print the setup commands without changing anything",
+    )
+    setup.add_argument(
+        "--torch-profile",
+        choices=("cpu", "default"),
+        default="cpu",
+        help="Install a compact CPU wheel or use the platform's default PyTorch wheel",
     )
     setup.set_defaults(handler=command_setup)
     return result
