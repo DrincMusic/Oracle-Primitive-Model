@@ -23,7 +23,14 @@ not rerun model training or regenerate the large Stage-1 evidence.
 
 ## Source tests
 
-Install the study dependencies, then run the OPM-scoped tests from the historical workspace:
+The preferred agent and human setup command creates an isolated environment, installs dependencies,
+verifies the closed result, and runs the OPM-scoped tests:
+
+```powershell
+python tools/opm_agent.py setup
+```
+
+The equivalent manual commands are:
 
 ```powershell
 python -m pip install -r requirements-study.txt

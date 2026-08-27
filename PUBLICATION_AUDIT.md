@@ -18,6 +18,8 @@ Audit date: 2026-08-27
   a short destination and Git's `core.longpaths=true` setting.
 - License: **Apache-2.0** — selected by the repository owner and recorded in `LICENSE` and
   `CITATION.cff`.
+- Agent onboarding: **PASS** — doctor, setup dry-run, closed-result verification, and the agent-facing
+  96-test command completed successfully.
 
 ## Byte-bound local-path exception
 
@@ -43,3 +45,10 @@ row-level Stage-1 predictions, interventions, and probes.
 
 The external archive remains pending. The repository must not claim that the complete raw evidence
 bundle is downloadable until that archive is published and its persistent identifier is recorded.
+
+## Storage observation
+
+The completed local development tree measured 306,877,605,685 bytes, including 297,982,329,531 bytes
+under `evidence`. The largest study components were pilots (146.64 GB), primary runs (122.20 GB), and
+post-primary processing (28.56 GB). These local measurements are operational observations rather than
+manifest-bound publication identities; `docs/storage.md` keeps that distinction explicit.

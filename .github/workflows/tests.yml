@@ -19,7 +19,4 @@ jobs:
       - name: Install study dependencies
         run: python -m pip install -r requirements-study.txt
       - name: Run OPM tests
-        working-directory: studies/v1.1.4/workspace
-        env:
-          PYTHONPATH: "src:."
-        run: python -m pytest tests -q
+        run: python tools/opm_agent.py test

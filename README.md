@@ -31,12 +31,32 @@ The authoritative identities are:
 - Closeout Merkle root: `126f7a88f3ad31154cb552d6bd829109a2b5f1548daf1438930bf4b3543618b5`
 - Final report SHA-256: `1ba064803da7fb9a6ba4434b9ae056e3bec157195c63ee9620b5687f92e5517d`
 
+## Agent-ready setup
+
+The repository includes an agent operating contract, a machine-readable experiment entry point, and a
+cross-platform setup tool. An agent should begin with:
+
+```text
+python tools/opm_agent.py doctor
+```
+
+Use `python tools/opm_agent.py verify` for the closed result or `python tools/opm_agent.py setup` to
+create a virtual environment, install dependencies, verify the snapshot, and run the source tests.
+See [`AGENTS.md`](AGENTS.md), [`OPM_EXPERIMENT.json`](OPM_EXPERIMENT.json), and the
+[agent setup guide](docs/agent-setup.md).
+
+Full computational retraining is a separate profile and is not yet one-command ready. The external
+archive and a fresh-workspace reproduction runbook remain pending; agents must not launch training
+inside the immutable historical snapshot.
+
 ## Repository layout
 
 ```text
 studies/v1.1.4/workspace/  Byte-preserving historical study workspace
 tools/                     Export and verification tooling
 docs/                      Architecture and reproducibility guides
+AGENTS.md                   Agent operating contract
+OPM_EXPERIMENT.json         Machine-readable task and readiness entry point
 OPM_PUBLIC_EXPORT_MANIFEST.json
 OPM_EXTERNAL_EVIDENCE_MANIFEST.json
 ```
@@ -51,6 +71,9 @@ Git contains code, tests, study documents, authorization records, frozen reports
 sealed targets, training summaries, and cryptographic manifests. Checkpoints, full training event
 streams, generated canonical datasets, and row-level Stage-1 evidence are listed by SHA-256 in
 `OPM_EXTERNAL_EVIDENCE_MANIFEST.json`; their external archival release is pending.
+
+See the [storage profile](docs/storage.md) for the Git footprint, external inventory, and observed
+historical training footprint.
 
 ## License
 

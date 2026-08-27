@@ -15,5 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Check agent entry point
+        run: python tools/opm_agent.py doctor --json
+      - name: Check setup plan
+        run: python tools/opm_agent.py setup --dry-run
       - name: Verify public export and closeout
-        run: python tools/verify_public_export.py --repository .
+        run: python tools/opm_agent.py verify

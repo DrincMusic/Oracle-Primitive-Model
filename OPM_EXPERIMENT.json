@@ -1,0 +1,42 @@
+{
+  "schema_version": "opm-agent-entrypoint-v1",
+  "project": "Oracle Primitive Model",
+  "repository": "https://github.com/DrincMusic/Oracle-Primitive-Model",
+  "study_version": "1.1.4",
+  "study_state": "CLOSED",
+  "immutable_roots": [
+    "studies/v1.1.4/workspace"
+  ],
+  "profiles": {
+    "closed_result_verification": {
+      "command": "python tools/opm_agent.py verify",
+      "network_required": false,
+      "status": "READY"
+    },
+    "source_test_environment": {
+      "command": "python tools/opm_agent.py setup",
+      "network_required": true,
+      "status": "READY"
+    },
+    "full_computational_reproduction": {
+      "external_evidence_manifest": "OPM_EXTERNAL_EVIDENCE_MANIFEST.json",
+      "reason": "The persistent external archive and a fresh-workspace reproduction runbook are pending.",
+      "status": "BLOCKED_PENDING_REPRODUCTION_BUNDLE"
+    }
+  },
+  "expected_verification": {
+    "closeout_freeze_sha256": "f9ee482d973fca5522940bf35a168333f6b12864e614d185b29201a709ed165f",
+    "closeout_merkle_root": "126f7a88f3ad31154cb552d6bd829109a2b5f1548daf1438930bf4b3543618b5",
+    "source_tests_passed": 96
+  },
+  "storage": {
+    "git_snapshot_bytes": 6358951,
+    "external_manifest_known_bytes": 28469738283,
+    "historical_local_evidence_observation_bytes": 297982329531,
+    "historical_local_project_observation_bytes": 306877605685,
+    "observation_date": "2026-08-27",
+    "git_snapshot_is_manifest_bound": true,
+    "external_inventory_is_manifest_bound": true,
+    "historical_local_observations_are_manifest_bound": false
+  }
+}

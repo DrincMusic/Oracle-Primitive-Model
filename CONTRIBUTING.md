@@ -12,5 +12,8 @@ versions. Changes should:
 3. Run `python tools/verify_public_export.py --repository .`.
 4. State whether the change affects the frozen study, future software, or documentation only.
 
+For a complete local setup and test pass, run `python tools/opm_agent.py setup`. Agents should read
+`AGENTS.md` before making changes.
+
 Scientific reinterpretations should cite the frozen report and clearly distinguish new analysis from
 the preregistered v1.1.4 decisions.
