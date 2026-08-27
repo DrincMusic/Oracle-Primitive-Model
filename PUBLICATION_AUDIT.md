@@ -12,6 +12,10 @@ Audit date: 2026-08-27
 - GitHub object boundary: **PASS** — no staged publication file exceeds 100,000,000 bytes.
 - OPM tests: **PASS** — 96 passed; 15 dependency warnings; 0 failed.
 - Public export and closeout verification: **PASS**.
+- Clean-clone verification: **PASS** — commit `cb0cb29` was cloned to a new local directory;
+  the export verifier reproduced the authoritative hashes and all 96 OPM tests passed.
+- Windows checkout note: the preserved evidence tree has deep paths. The successful clean clone used
+  a short destination and Git's `core.longpaths=true` setting.
 
 ## Byte-bound local-path exception
 

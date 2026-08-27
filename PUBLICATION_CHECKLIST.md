@@ -7,7 +7,7 @@
 - [x] Complete the private-path and secret review with documented dispositions.
 - [ ] Obtain repository-owner acceptance of the three byte-bound local-path exceptions.
 - [ ] Select and add a public-use license.
-- [ ] Run tests and closeout verification in a clean local environment.
+- [x] Run tests and closeout verification in a clean local environment.
 - [ ] Connect the private GitHub repository and push only with owner approval.
 - [ ] Verify CI from a clean GitHub checkout.
 - [ ] Approve changing repository visibility to public.
