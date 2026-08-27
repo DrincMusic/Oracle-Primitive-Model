@@ -52,8 +52,6 @@ sealed targets, training summaries, and cryptographic manifests. Checkpoints, fu
 streams, generated canonical datasets, and row-level Stage-1 evidence are listed by SHA-256 in
 `OPM_EXTERNAL_EVIDENCE_MANIFEST.json`; their external archival release is pending.
 
-## License status
+## License
 
-A public-use license has not yet been selected. Until a `LICENSE` file is added, copyright law
-reserves reuse and redistribution rights. License selection is a publication blocker, not a detail to
-infer automatically.
+This repository is licensed under the Apache License 2.0. See [`LICENSE`](LICENSE).

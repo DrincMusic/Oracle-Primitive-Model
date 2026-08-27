@@ -16,6 +16,8 @@ Audit date: 2026-08-27
   the export verifier reproduced the authoritative hashes and all 96 OPM tests passed.
 - Windows checkout note: the preserved evidence tree has deep paths. The successful clean clone used
   a short destination and Git's `core.longpaths=true` setting.
+- License: **Apache-2.0** — selected by the repository owner and recorded in `LICENSE` and
+  `CITATION.cff`.
 
 ## Byte-bound local-path exception
 
@@ -29,8 +31,8 @@ path. No credential, email address, or additional user identifier occurs in thos
 | `studies/v1.1.4/workspace/evidence/primary_runs/v1.1.4/post-primary/stage1-artifacts-v5/run-ddfc05137e09a402/preflight.json` | `b0d750dbe2080bfa12e2ffa9d17bb192adbfe57656dddacf4aa8307c78a6389f` | Bound Stage-1 freeze artifact |
 
 Redacting these paths would invalidate the frozen artifact hashes and the published closeout chain.
-They are therefore documented as a narrow historical exception. Repository-owner acceptance of this
-exception is required before the repository becomes public.
+They are therefore documented as a narrow historical exception. The repository owner explicitly
+accepted all three disclosures on 2026-08-27.
 
 ## External evidence
 
