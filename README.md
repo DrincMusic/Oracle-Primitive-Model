@@ -1,3 +1,5 @@
+Read the paper @ https://localaisystemsintegrations.com/papers/opm
+
 # Oracle Primitive Model
 
 Oracle Primitive Model (OPM) is a shared-primitive architecture for systematic recombination
